@@ -1,0 +1,1 @@
+# komparor

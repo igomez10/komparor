@@ -1,9 +1,9 @@
 
 export default function Button({ id }) {
-    return (
-        <div className="main">
-            <div className="button" >Here</div>
-            <style jsx>{`
+  return (
+    <div className="main">
+      <div className="button" >Here</div>
+      <style jsx>{`
           .main {
             font: 15px Helvetica, Arial;
             border: 1px solid #eee;
@@ -21,6 +21,6 @@ export default function Button({ id }) {
             margin: 10px 0;
           }
         `}</style>
-        </div>
-    )
+    </div>
+  )
 }

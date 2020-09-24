@@ -3,22 +3,22 @@ import Board from '../components/board'
 
 
 Home.getInitialProps = async () => {
-    const res = await fetch('https://785b5c7c-776b-4e5b-b7d7-1a1f3fcdfa9e.mock.pstmn.io/v1/challenge')
-    const json = await res.json()
-    return { profiles: json }
+  const res = await fetch('https://785b5c7c-776b-4e5b-b7d7-1a1f3fcdfa9e.mock.pstmn.io/v1/challenge')
+  const json = await res.json()
+  return { profiles: json }
 }
 
 function Home({ profiles }) {
 
-    return (
-        <div className="container">
+  return (
+    <div className="container">
 
-            <main>
-                <h1>Which one?</h1>
-                <Board users={profiles.users}></Board>
-            </main>
+      <main>
+        <h1>Which one?</h1>
+        <Board users={profiles.users}></Board>
+      </main>
 
-            <style jsx>{`
+      <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -149,7 +149,7 @@ function Home({ profiles }) {
         }
       `}</style>
 
-            <style jsx global>{`
+      <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -163,7 +163,7 @@ function Home({ profiles }) {
           box-sizing: border-box;
         }
       `}</style>
-        </div >
-    )
+    </div >
+  )
 }
 export default Home

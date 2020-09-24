@@ -1,12 +1,12 @@
 
 import Button from "../components/button"
 export default function Card({ profile }) {
-    return (
-        <div className="main">
-            <h1>{profile.id}</h1>
-            <img src={profile.photo_url}></img>
-            <Button id={profile.id}></Button>
-            <style jsx>{`
+  return (
+    <div className="main">
+      <h1>{profile.id}</h1>
+      <img src={profile.photo_url}></img>
+      <Button id={profile.id}></Button>
+      <style jsx>{`
           .main {
             font: 15px Helvetica, Arial;
             border: 1px solid #eee;
@@ -18,6 +18,6 @@ export default function Card({ profile }) {
             margin: 10px 0;
           }
         `}</style>
-        </div>
-    )
+    </div>
+  )
 }
